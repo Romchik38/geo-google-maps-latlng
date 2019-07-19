@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Геолокация - на примере Google Maps</title>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
+        #map {
+            height: 600px;
+            width: 800px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZlKqDtDJ7vK2K03zWpcJxxUe_GnwHzwA"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <h1>Страница с геолокацией Google Maps</h1>
+            </div>
+            <div class="col-md-3">
+                <button id="updBtn" type="button" class="btn btn-primary">Обновить</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    <script src="methods.js"></script>
+</body>
+
+</html>
